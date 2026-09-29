@@ -1,0 +1,9 @@
+---
+- name: Demo Web
+  hosts: all
+  roles:
+    - kjhweb
+  tasks:
+    - name: Demo Web Start
+      ansible.builtin.include_role: 
+        name: s4d0w.demoweb
